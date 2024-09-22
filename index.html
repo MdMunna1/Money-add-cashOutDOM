@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <section class="text-center py-4">
+          <h2 id="h2" class="font-bold text-3xl">1000</h2>
+          <p class="font-semibold py-2">NOW BALENCH</p>
+        </section>
+        <!-- button section -->
+        <section class="flex justify-center">
+          <button id="add-btn" class="btn bg-red-700">ADD MONEY</button>
+          <button id="out-btn" class="btn bg-sky-600">CHASH OUT</button>
+        </section>
+        <!-- from section -->
+        <form class="card-body add-section">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">ADD AMOUNT</span>
+            </label>
+            <input id="add"
+              type="text"
+              placeholder=" ADD MONEY AMOUNT "
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">PIN</span>
+            </label>
+            <input id="pin"
+              type="password"
+              placeholder="PIN"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn add-maney btn-primary">ADD MONEY</button>
+          </div>
+        </form>
+        <!-- chas out section -->
+        <form class="card-body hidden out-section">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">CASH OUT AMOUNT</span>
+            </label>
+            <input id="cash"
+              type="text"
+              placeholder=" ADD CASH OUT AMOUNT "
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">PIN</span>
+            </label>
+            <input id="cashPin"
+              type="password"
+              placeholder="PIN"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn cash-maney btn-primary">CASH OUT</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
